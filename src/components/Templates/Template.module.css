@@ -1,13 +1,21 @@
 
 
 .body{
-  background-image: url('src/assets/images/img2.wallspic.com-evenement_celeste-objet_astronomique-pleine_lune-lumiere-ciel-5760x3840.jpg');
-  background-repeat: no-repeat;
+  /* background-image: url('src/assets/images/img2.wallspic.com-evenement_celeste-objet_astronomique-pleine_lune-lumiere-ciel-5760x3840.jpg');
+  background-repeat: no-repeat; */
+  background-color: rgb(5, 19, 44);
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
+.mainBackground{
+  height: 100vh;
+  color: white;
+}
+
+
 
 
 

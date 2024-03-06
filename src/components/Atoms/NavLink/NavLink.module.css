@@ -1,1 +1,26 @@
+.icon{
+    font-size: 42px;
+    transition: transform 0.3s ease;
+    
+}
 
+.liens_globale {
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .liens_globale:hover {
+    /* box-shadow: 3px 3px 10px; */
+    box-shadow: none;
+  }
+  
+  .icon:hover{
+    transform: scale(1.2);
+  }

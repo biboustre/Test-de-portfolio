@@ -1,7 +1,9 @@
-import styles from "../../Organisms/Header/Header.module.css";
+import styles from "../NavLink/NavLink.module.css";
 import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const NavLink = ({link, img, text}) => {
+
+const NavLink = ({link, icon, text}) => {
     const location = useLocation();
 
     const active = location.pathname === link;
@@ -9,7 +11,7 @@ const NavLink = ({link, img, text}) => {
     return (
         <Link to={link} className={`${styles.liens_globale} ${active && styles.activeLink}`}>
             <p>{text}</p>
-            <img src={img} alt="" />
+            <FontAwesomeIcon icon={icon} className={styles.icon} />
         </Link>  
     )
 }

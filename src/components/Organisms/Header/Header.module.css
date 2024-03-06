@@ -1,32 +1,22 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 50px 15px;
+  padding: 0 60px 0;
   width: 100%;
 }
 
-nav {
+.titleSection{
   display: flex;
-  gap: 57px;
-  align-items: center;
+}
+
+.sectionPage{
 }
 
 .surnom{
-  color: rgba(255, 96, 96, 1);
+  font-family: "Rock 3D";
+  font-size: 130px;
 }
 
-.liens_globale {
-  text-decoration: none;
-  color: rgba(255, 96, 96, 1);
-}
-
-.liens_globale:hover {
-  text-decoration: underline;
-}
-
-.activeLink {
-  text-decoration: underline;
-}
 
 @media screen and (max-width: 944px) {
   header {
@@ -35,8 +25,5 @@ nav {
 }
 @media screen and (max-width: 630px) {
 
-  nav {
-    gap: 26px;
-    font-size: 12px;
-  }
+
 }
