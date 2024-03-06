@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 const Template = ({ children }) => {
   return (
     <>
-    <body className={styles.body}>
-    </body>
+    <div className={styles.body}>
+    </div>
       <main className={styles.mainBackground}>
         <Header />
         <main className="mainTemplate">{children}</main>

@@ -3,14 +3,15 @@ import LogoImg from "../../../assets/images/logo-kasa.png"
 
 function Footer () {
     return (
-        <>
             <footer>
-                <div className={styles.logo_footer}>
-                    <img src={LogoImg} alt="" />
-                </div>
-                <p>© 2020 Kasa. All rights reserved</p>
+                <h1>Contact Me</h1>
+                <h2>Avec joie</h2>
+                <main className={styles.contactMe}>
+                    <i>habib_MaamarBenhadjar@outlook.com</i>
+                    <i></i>
+                    <i></i>
+                </main>
             </footer>
-        </>
     )
 }
 

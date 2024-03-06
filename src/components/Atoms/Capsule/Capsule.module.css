@@ -1,0 +1,7 @@
+.capsule{
+    background-color: rgb(162, 146, 122);
+    height: 160px;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+}

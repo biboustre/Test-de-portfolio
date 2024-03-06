@@ -1,7 +1,36 @@
 nav{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    right: 45px;
+    /* align-items: center; */
     gap: 30px;
     padding-top: 40px;
+    position: fixed;
+    z-index: 2;
 }
+
+.iconPapers{
+        font-size: 42px;
+        transition: transform 0.3s ease;
+}
+
+.iconPapers:hover{
+    transform: scale(1.2);
+  }
+
+  .contact {
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact:hover {
+    /* box-shadow: 3px 3px 10px; */
+    box-shadow: none;
+  }
