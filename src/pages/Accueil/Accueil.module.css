@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+  }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.presentation{
+  color: white
+}
+  
+  /******** main ********/
+  .mainAccueil{
+  }
+
+  .projet{
+    height: ;
+  }
+
+  .projet1{
+    background-color: red;
+  }
+  .projet2{
+    background-color: blue;
+  }
+  .projet3{
+    background-color: orange;
+  }
+  .projet4{
+    background-color: yellow;
+  }
+  .projet5{
+    background-color: maroon;
+  }
+  .projet6{
+    background-color: violet;
+  }
+  .projet7{
+    background-color: aqua;
+  }
+  
+
+ 
+
+
+/* Media queries RESPONSIVE */
+ 
+  @media screen and (max-width: 540px) {
+    
+  }
+  
+  
+  
