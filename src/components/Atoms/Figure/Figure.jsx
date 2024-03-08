@@ -1,8 +1,8 @@
 import styles from "../Figure/Figure.module.css";
 
-function Figure({ src, alt }) {
+function Figure({ src, alt, className }) {
   return (
-    <figure className={styles.projets}>
+    <figure className={`${styles.projets} ${className}`}>
       <img src={src} alt={alt} />
     </figure>
   );

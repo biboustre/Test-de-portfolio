@@ -34,3 +34,9 @@ nav{
     /* box-shadow: 3px 3px 10px; */
     box-shadow: none;
   }
+
+  @media screen and (max-width: 790px) {
+    nav{
+      right: 15px;
+    }
+  }

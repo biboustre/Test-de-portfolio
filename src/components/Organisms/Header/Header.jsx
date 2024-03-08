@@ -12,7 +12,7 @@ function Header() {
         <section className={styles.liensHeader}>
           <a
             href="#"
-            className={`${styles.redirection} ${
+            className={`${styles.redirection} ${styles.redirection1} ${
               active === "home" && styles.activeRedirection
             }`}
             onClick={() => setActive("home")}
@@ -21,7 +21,7 @@ function Header() {
           </a>
           <a
             href="#projects"
-            className={`${styles.redirection} ${
+            className={`${styles.redirection} ${styles.redirection2} ${
               active === "Project" && styles.activeRedirection
             }`}
             onClick={() => setActive("Project")}
@@ -30,7 +30,7 @@ function Header() {
           </a>
           <a
             href="#contact"
-            className={`${styles.redirection} ${
+            className={`${styles.redirection} ${styles.redirection3} ${
               active === "Contact" && styles.activeRedirection
             }`}
             onClick={() => setActive("Contact")}

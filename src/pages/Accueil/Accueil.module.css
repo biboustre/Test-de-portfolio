@@ -1,16 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: Montserrat; */
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Montserrat; */
+}
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-.presentation{
+.presentation {
   position: absolute;
   top: 0;
   right: 0;
@@ -21,69 +21,99 @@ a{
   align-items: center;
   /* margin-left: 150px; */
   margin-bottom: 90px;
-  color: white
+  color: white;
 }
 
-.mainPresentation{
+.mainPresentation {
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
 
-.mainPresentation > h1{
+.mainPresentation > h1 {
   font-size: 2.1vw;
+  font-family: serif;
+  font-weight: 400;
 }
-.mainPresentation > h2, h3{
+.mainPresentation > h2,
+h3 {
   font-size: 7.9vw;
 }
 
-.mainPresentation{
+.mainPresentation {
   font-family: "paprika";
   font-size: 30px;
 }
-  
-  /******** main ********/
-.mainFigure{
+
+/******** main ********/
+.portfolioProject {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 100px;
-  padding: 0 10%;
+  /* padding: 0 10%; */
 }
 
-  .portfolioProject{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    width: 100vw;
-  }
-
-.mainSkills{
+.titleProjects{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 60px;
+  align-items: start;
 }
 
-.titleSkills{
+.titleProjects > h1{
+  font-size: 40px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.titleProjects > h2{
+  font-size: 60px;
+  font-family: "paprika";
+  font-weight: 400;
+}
+
+.mainProjects{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:29px 5%;
+  width: 82%;
+  /* padding: 0 20px; */
+}
+
+.mainAccueil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.mainSkills {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  width: 80% ;
+  gap: 60px;
+  opacity: 0; /* Définit l'élément initiallement invisible */
+  animation: flash2 0.9s ease-in-out 0.2s forwards;
+}
+
+.titleSkills {
   align-self: start;
   padding-left: 250px;
 }
 
-.titleSkills > h1{
+.titleSkills > h1 {
   font-size: 40px;
   font-family: serif;
   font-weight: 400;
-
 }
-.titleSkills > h2{
+.titleSkills > h2 {
   font-size: 60px;
   font-family: "paprika";
 }
-
-.mainCapsule{
+.mainCapsule {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -91,41 +121,47 @@ a{
   width: 100vw;
 }
 
-.mainAccueil{
-  display: flex;
-  flex-direction: column;
-  gap: 200px;
-}
-
-.titleSkills {
+.titleSkills, .titleProjects {
   animation: flash 0.9s ease-in-out 0.2s;
   animation-fill-mode: both;
 }
-/* .mainCapsule {
-  animation: flash 0.9s ease-in-out 0.1s;
-  animation-fill-mode: both;
-} */
 
-.capsule1{
-  animation: flash 0.9s ease-in-out 0.2s;
-  animation-fill-mode:both ;
+.capsule1, .fig1 {
+  opacity: 0; 
+  animation: flash2 0.9s ease-in-out 0.1s forwards;
 }
-.capsule2{
-  animation: flash 0.9s ease-in-out 0.6s;
-  animation-fill-mode:both ;
+
+.capsule2, .fig2 {
+  opacity: 0;
+  animation: flash2 0.9s ease-in-out 0.5s forwards;
 }
-.capsule3{
-  animation: flash 0.9s ease-in-out 1s;
-  animation-fill-mode:both ;
+
+.capsule3, .fig3 {
+  opacity: 0;
+  animation: flash2 0.9s ease-in-out 0.9s forwards;
 }
-.capsule4{
-  animation: flash 0.9s ease-in-out 1.4s;
-  animation-fill-mode:both ;
+
+.capsule4, .fig4 {
+  opacity: 0;
+  animation: flash2 0.9s ease-in-out 1.3s forwards;
 }
-.capsule5{
-  animation: flash 0.9s ease-in-out 1.8s;
-  animation-fill-mode:both ;
+
+.capsule5 {
+  opacity: 0;
+  animation: flash2 0.9s ease-in-out 1.7s forwards;
 }
+
+@keyframes flash2 {
+  0% {
+    opacity: 0;
+    transform: translateY(150px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
 
 @keyframes flash {
   0% {
@@ -135,14 +171,10 @@ a{
     scale: 1;
   }
 }
- 
-
-
 /* Media queries RESPONSIVE */
- 
-  @media screen and (max-width: 540px) {
-    
-  }
-  
-  
-  
+
+@media screen and (max-width: 750px) {
+}
+/*OU*/
+@media screen and (max-width: 730px) {
+}

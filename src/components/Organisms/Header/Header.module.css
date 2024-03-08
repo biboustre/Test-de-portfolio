@@ -8,6 +8,8 @@ header {
 .titleSection{
   display: flex;
   flex-direction: column;
+  align-items: start;
+  height: 100vh;
   gap: 50px;
   position: fixed;
   z-index: 2;
@@ -16,14 +18,25 @@ header {
 .liensHeader{
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
   font-size: 23px;
+  height: 100vh;
   gap: 110px;
+  /* height: 50px; */
 }
 
 .redirection {
   transform: rotate(270deg);
   color: white;
+  display: inlin-block;
+  /* height: 80px; */
   /* order: -1; */
+}
+
+
+
+.redirection:hover{
+  color: orange;
 }
 
 .activeRedirection{
@@ -36,12 +49,8 @@ header {
 }
 
 
-@media screen and (max-width: 944px) {
-  header {
-    padding: 30px;
+@media screen and (max-width: 790px) {
+  header{
+    padding: 0 0 0;
   }
-}
-@media screen and (max-width: 630px) {
-
-
 }
