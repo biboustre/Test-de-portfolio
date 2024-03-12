@@ -1,24 +1,60 @@
-footer{
+
+  footer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 209px;
-    background-color: black;
-    color: white;
-  }
-  
-  
-  .logo_footer{
-    margin-top: 70px;
-    filter: brightness(3) ;
-    /* width: 122px; */
-    /* height: 39.44px; */
-    margin: auto;
-  }
-  
-  footer > p{
-    padding-bottom: 25px;
-    font-family: Montserrat;
-  }
+    background-color: #333;
+    height: 70%;
+}
+ 
+.mainFooter{
+  display: flex;
+  background-color: white;
+  height: 60%;
+  width: 80%;
+  box-shadow: 0px 0px 30px 10px  black;
+  border-radius: 10px;
+}
 
+.identity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+  width: 60%;
+  /* border: none; */
+  box-shadow: 0px 0px 30px  black;
+}
 
+.coordonnee{
+  height: 100%;
+  background-color: orange;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* align-self: start; */
+}
+
+aside > h1{
+  font-family: "paprika";
+  color: rgb(27, 134, 134);
+}
+aside > h2{
+  font-size: 16px;
+  font-family: "paprika";
+  color: rgb(145, 145, 145);
+}
+
+.imgIdentity > img{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+hr{
+  width: 60%;
+}

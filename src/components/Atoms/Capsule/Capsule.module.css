@@ -5,3 +5,9 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 580px) {
+    .capsule{
+        width: 80%
+    }
+}

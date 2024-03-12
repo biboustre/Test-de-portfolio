@@ -2,8 +2,8 @@ import styles from "../../pages/Accueil/Accueil.module.css";
 import Template from "../../components/Templates/PageTemplate";
 import Figure from "../../components/Atoms/Figure/Figure";
 import Capsule from "../../components/Atoms/Capsule/Capsule";
-import { useInView } from "react-intersection-observer";
-import React, { useEffect } from "react";
+// import { useInView } from "react-intersection-observer";
+// import React, { useEffect } from "react";
 
 function Accueil() {
 

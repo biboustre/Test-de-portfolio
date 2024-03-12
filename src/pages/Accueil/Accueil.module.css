@@ -19,7 +19,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 150px; */
   margin-bottom: 90px;
   color: white;
 }
@@ -32,7 +31,7 @@ a {
 
 .mainPresentation > h1 {
   font-size: 2.1vw;
-  font-family: serif;
+  font-family: Arial;
   font-weight: 400;
 }
 .mainPresentation > h2,
@@ -77,7 +76,7 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   gap:29px 5%;
-  width: 82%;
+  /* width: 80%; */
   /* padding: 0 20px; */
 }
 
@@ -86,23 +85,20 @@ h3 {
   align-items: center;
   flex-direction: column;
   gap: 200px;
+  margin-bottom: 100px;
 }
 
 .mainSkills {
   display: flex;
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
   width: 80% ;
-  gap: 60px;
-  opacity: 0; /* Définit l'élément initiallement invisible */
+  gap: 80px;
+  opacity: 0;  
   animation: flash2 0.9s ease-in-out 0.2s forwards;
 }
 
-.titleSkills {
-  align-self: start;
-  padding-left: 250px;
-}
+
 
 .titleSkills > h1 {
   font-size: 40px;
@@ -116,6 +112,7 @@ h3 {
 .mainCapsule {
   display: flex;
   flex-wrap: wrap;
+  /* width: 100%; */
   justify-content: center;
   gap: 30px;
   width: 100vw;
@@ -173,8 +170,23 @@ h3 {
 }
 /* Media queries RESPONSIVE */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 620px) {
+  .titleSkills > h1 {
+    font-size: 30px;
+  }
+  .titleSkills > h2 {
+    font-size: 40px;
+  }
 }
 /*OU*/
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 750px ) {
+  .titleProjects h1{
+    font-size: 30px;
+  }
+  .titleProjects h2{
+    font-size: 30px;
+  }
+  .titleProjects {
+    align-items: center;
+  }
 }
