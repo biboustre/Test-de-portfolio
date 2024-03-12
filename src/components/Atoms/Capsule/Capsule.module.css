@@ -1,13 +1,33 @@
-.capsule{
-    background-color: rgb(162, 146, 122);
-    height: 160px;
-    width: 400px;
-    border-radius: 10px;
-    cursor: pointer;
+.capsule {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: rgb(162, 146, 122);
+  height: 120px;
+  width: 400px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "paprika";
+}
+
+.details > h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.details > p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.iconCapsules{
+    margin-left: 20px;
+    font-size: 50px;
 }
 
 @media screen and (max-width: 580px) {
-    .capsule{
-        width: 80%
-    }
+  .capsule {
+    width: 80%;
+  }
 }

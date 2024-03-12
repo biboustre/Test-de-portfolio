@@ -2,11 +2,14 @@ import styles from "../../pages/Accueil/Accueil.module.css";
 import Template from "../../components/Templates/PageTemplate";
 import Figure from "../../components/Atoms/Figure/Figure";
 import Capsule from "../../components/Atoms/Capsule/Capsule";
-// import { useInView } from "react-intersection-observer";
-// import React, { useEffect } from "react";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faFigma } from "@fortawesome/free-brands-svg-icons";
+import { faSass } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 function Accueil() {
-
   return (
     <Template>
       <section className={styles.presentation}>
@@ -24,11 +27,11 @@ function Accueil() {
             <h2>MY SKILLS</h2>
           </section>
           <section className={styles.mainCapsule}>
-            <Capsule className={styles.capsule1} />
-            <Capsule className={styles.capsule2} />
-            <Capsule className={styles.capsule3} />
-            <Capsule className={styles.capsule4} />
-            <Capsule className={styles.capsule5} />
+            <Capsule icon={faReact} name="React js" text="Du text pour tester" className={styles.capsule1} />
+            <Capsule  name="Redux-Toolkit" text="Du text pour tester" className={styles.capsule2} />
+            <Capsule icon={faGithub}  name="SEO" text="Du text pour tester" className={styles.capsule3} />
+            <Capsule icon={faFigma}  name="Figma" text="Du text pour tester" className={styles.capsule4} />
+            <Capsule icon={faSass}  name="SASS/SCSS" text="Du text pour tester" className={styles.capsule5} />
           </section>
         </section>
 
@@ -45,9 +48,9 @@ function Accueil() {
           </section>
         </section>
       </main>
+      <hr className={styles.hrAccueil}/>
     </Template>
   );
 }
 
 export default Accueil;
-

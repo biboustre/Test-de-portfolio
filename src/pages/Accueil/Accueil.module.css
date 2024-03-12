@@ -168,6 +168,12 @@ h3 {
     scale: 1;
   }
 }
+
+.hrAccueil{
+  height: 1px;
+  margin: auto;
+  width: 66%;
+}
 /* Media queries RESPONSIVE */
 
 @media screen and (max-width: 620px) {
