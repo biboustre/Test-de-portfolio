@@ -1,12 +1,18 @@
 .projets{
     height: 400px;
-    width: 400px;
+    width: 510px;
     border-radius: 15px;
     /* width: 35%; */
     /* min-width: 200px; */
     background-color: rgb(162, 146, 122);
     /* padding: 0 100px; */
+}
 
+.projets > img{
+    height: 100%;
+    width: 100%;
+    /* object-fit:fill; */
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 680px ) {

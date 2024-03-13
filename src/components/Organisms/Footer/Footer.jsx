@@ -15,7 +15,7 @@ function Footer() {
           <aside style={styles.nameFooter}>
             <h1>MAAMAR BENHADJAR Habib</h1>
             <h2>Web Developer</h2>
-            <hr />
+            <hr className={styles.hrFooter} />
           </aside>
         </section>
         <section className={styles.coordonnee}>

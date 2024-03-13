@@ -19,7 +19,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
   color: white;
 }
 
@@ -75,9 +75,10 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap:29px 5%;
+  gap:29px;
+  margin-bottom: 100px;
   /* width: 80%; */
-  /* padding: 0 20px; */
+  padding: 0 50px;
 }
 
 .mainAccueil {
@@ -85,7 +86,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   gap: 200px;
-  margin-bottom: 100px;
+  /* margin:100px 0; */
 }
 
 .mainSkills {
@@ -93,8 +94,10 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   width: 80% ;
-  gap: 80px;
+  /* gap: 80px; */
   opacity: 0;  
+  margin-top: 100px;
+  height: 100vh;
   animation: flash2 0.9s ease-in-out 0.2s forwards;
 }
 
@@ -116,6 +119,10 @@ h3 {
   justify-content: center;
   gap: 30px;
   width: 100vw;
+}
+
+.titleSkills{
+  margin-bottom: 50px;
 }
 
 .titleSkills, .titleProjects {
@@ -148,6 +155,10 @@ h3 {
   animation: flash2 0.9s ease-in-out 1.7s forwards;
 }
 
+.linkFigures{
+  
+}
+
 @keyframes flash2 {
   0% {
     opacity: 0;
@@ -178,7 +189,7 @@ h3 {
 
 @media screen and (max-width: 620px) {
   .titleSkills > h1 {
-    font-size: 30px;
+    font-size: 60px;
   }
   .titleSkills > h2 {
     font-size: 40px;
@@ -186,13 +197,19 @@ h3 {
 }
 /*OU*/
 @media screen and (max-width: 750px ) {
-  .titleProjects h1{
+  .titleProjects > h1{
     font-size: 30px;
   }
-  .titleProjects h2{
+  .titleProjects > h2{
     font-size: 30px;
   }
   .titleProjects {
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 690px ) {
+  .mainPresentation > h1{
+    font-size: 15px;
   }
 }

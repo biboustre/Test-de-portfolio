@@ -23,3 +23,14 @@
   .icon:hover{
     transform: scale(1.2);
   }
+
+  @media screen and (max-width: 690px) {
+    .liens_globale{
+      height: 35px;
+      width:35px ;
+    }
+
+    .icon{
+      font-size: 20px;
+    }
+  }
