@@ -7,7 +7,7 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { faSass } from "@fortawesome/free-brands-svg-icons";
 import projet6 from "../../assets/images/Capture d'écran 2024-03-14 011406.png";
-import P11 from "../../assets/images/Capture d'écran 2024-03-13 151704.png";
+import P10 from "../../assets/images/Capture d'écran 2024-03-15 024541.png";
 import P4 from "../../assets/images/Capture d'écran 2024-03-13 143917.png";
 import P8 from "../../assets/images/Capture d'écran 2024-03-13 151406.png";
 import { Link } from "react-router-dom";
@@ -62,11 +62,11 @@ function Accueil() {
                 text="Portfolio d'une architecte d'intérieur en JavaScript Vanilla avec la possibilité de se connecter pour pouvoir ajouter et supprimer des travaux."
               />
             </Link>
-            <Link className={styles.linkFigure} to="">
+            <Link className={styles.linkFigure} to="https://github.com/biboustre/Projet_10_Debug">
               <Figure
-                src={P11}
+                src={P10}
                 className={styles.fig2}
-                text=" Implémentation du front-end d'une application bancaire avec React en utilisant Redux. Possibilité de se connecter/deconnecter, modifier son pseudo ainsi que réaliser des transactions"
+                text="Débuggage du site d'une agence d'événementiel à l'aide de test unitaires/fonctionnels et des chrome DevTools"
               />
             </Link>
             <Link

@@ -3,22 +3,28 @@
   width: 510px;
   border-radius: 15px;
   color: whitesmoke;
-  font-family: "paprika";
   margin-bottom: 20px;
-  /* background-color: rgb(162, 146, 122); */
+  transition: all 0.3s;
 }
 
 .projets > p {
   padding: 12px 0;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.1px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17.5px;
 }
 
 .projets > img {
   height: 80%;
   width: 100%;
-  /* object-fit:fill; */
   border-radius: 15px;
 }
+
+.projets:hover {
+    /* box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.726); */
+    height: 512px;
+    width: 502px;
+  }
 
 @media screen and (max-width: 680px) {
   .projets {
