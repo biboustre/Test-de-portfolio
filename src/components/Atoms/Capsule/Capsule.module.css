@@ -8,10 +8,11 @@
   border-radius: 6px;
   cursor: pointer;
   font-family: "paprika";
+  transition: all 0.3s;
 }
 
 .details > h1 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: normal;
 }
 .details > p {
@@ -21,9 +22,15 @@
   font-style: italic;
 }
 
-.iconCapsules{
-    margin-left: 20px;
-    font-size: 50px;
+.iconCapsules {
+  margin-left: 20px;
+  font-size: 50px;
+}
+
+.capsule:hover {
+  box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.726);
+  height: 100px;
+  width: 360px;
 }
 
 @media screen and (max-width: 580px) {

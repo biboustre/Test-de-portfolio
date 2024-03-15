@@ -6,13 +6,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { faSass } from "@fortawesome/free-brands-svg-icons";
-import projet6 from "../../assets/images/Capture d'écran 2024-03-13 144209.png";
+import projet6 from "../../assets/images/Capture d'écran 2024-03-14 011406.png";
 import P11 from "../../assets/images/Capture d'écran 2024-03-13 151704.png";
-import P4 from "../../assets/images/Capture d'écran 2024-03-13 151406.png";
-import P8 from "../../assets/images/Capture d'écran 2024-03-13 143917.png";
-import NavLink from "../../components/Atoms/NavLink/NavLink";
+import P4 from "../../assets/images/Capture d'écran 2024-03-13 143917.png";
+import P8 from "../../assets/images/Capture d'écran 2024-03-13 151406.png";
 import { Link } from "react-router-dom";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Accueil() {
   return (
@@ -26,7 +24,7 @@ function Accueil() {
       </section>
       <hr className={styles.hrAccueil} />
       <main className={styles.mainAccueil}>
-        <section className={styles.mainSkills}>
+        <section id="skills" className={styles.mainSkills}>
           <section className={styles.titleSkills}>
             <h1>Skills</h1>
             <h2>MY SKILLS</h2>
@@ -35,30 +33,14 @@ function Accueil() {
             <Capsule
               icon={faReact}
               name="React js"
-              text="Du text pour tester"
               className={styles.capsule1}
             />
-            <Capsule
-              name="Redux-Toolkit"
-              text="Du text pour tester"
-              className={styles.capsule2}
-            />
-            <Capsule
-              icon={faGithub}
-              name="SEO"
-              text="Du text pour tester"
-              className={styles.capsule3}
-            />
-            <Capsule
-              icon={faFigma}
-              name="Figma"
-              text="Du text pour tester"
-              className={styles.capsule4}
-            />
+            <Capsule name="Redux-Toolkit" className={styles.capsule2} />
+            <Capsule icon={faGithub} name="SEO" className={styles.capsule3} />
+            <Capsule icon={faFigma} name="Figma" className={styles.capsule4} />
             <Capsule
               icon={faSass}
               name="SASS/SCSS"
-              text="Du text pour tester"
               className={styles.capsule5}
             />
           </section>
@@ -71,16 +53,42 @@ function Accueil() {
           </section>
           <section className={styles.mainProjects}>
             <Link
+              className={styles.linkFigure}
               to="https://github.com/biboustre/Projet_6"
-              className={styles.linkFigures}
             >
-              <Figure src={projet6} className={styles.fig1} />
+              <Figure
+                src={projet6}
+                className={styles.fig1}
+                text="Portfolio d'une architecte d'intérieur en JavaScript Vanilla avec la possibilité de se connecter pour pouvoir ajouter et supprimer des travaux."
+              />
             </Link>
-            <Link to="">
-              <Figure src={P11} className={styles.fig2} />
+            <Link className={styles.linkFigure} to="">
+              <Figure
+                src={P11}
+                className={styles.fig2}
+                text=" Implémentation du front-end d'une application bancaire avec React en utilisant Redux. Possibilité de se connecter/deconnecter, modifier son pseudo ainsi que réaliser des transactions"
+              />
             </Link>
-            <Figure src={P4} className={styles.fig3} />
-            <Figure src={P8} className={styles.fig4} />
+            <Link
+              className={styles.linkFigure}
+              to="https://github.com/biboustre/Projet_4"
+            >
+              <Figure
+                src={P4}
+                className={styles.fig3}
+                text="Application web réalisée en mobile-first avec Sass, qui contient plusieurs animations et répertorie les menus de restaurants gastronomiques."
+              />
+            </Link>
+            <Link
+              className={styles.linkFigure}
+              to="https://github.com/biboustre/Projet-8-Kasa"
+            >
+              <Figure
+                src={P8}
+                className={styles.fig4}
+                text="Création d'une application web de location immobilière avec React et React Router."
+              />
+            </Link>
           </section>
         </section>
       </main>

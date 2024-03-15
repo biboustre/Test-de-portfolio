@@ -6,31 +6,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
-    <footer>
+    <footer id="contact">
       <main className={styles.mainFooter}>
         <section className={styles.identity}>
           <figure className={styles.imgIdentity}>
             <img src={Yosemite} alt="" />
           </figure>
-          <aside style={styles.nameFooter}>
+          <aside className={styles.info}>
             <h1>MAAMAR BENHADJAR Habib</h1>
             <h2>Web Developer</h2>
             <hr className={styles.hrFooter} />
+            <p>
+              Formation développeur/Intégrateur web <br /> Openclassrooms
+            </p>
           </aside>
         </section>
         <section className={styles.coordonnee}>
-          <div>
+          <section>
             <FontAwesomeIcon
               icon={faPaperPlane}
               className={styles.iconFooter}
             />
-            <p></p>
-          </div>
-          <div>
-            {" "}
+            <h2 className={styles.mailNum}>biboustre@hotmail.com</h2>
+          </section>
+          <section>
             <FontAwesomeIcon icon={faPhoneAlt} className={styles.iconFooter} />
-            <p></p>
-          </div>
+            <h2 className={styles.mailNum}>06-74-32-48-32</h2>
+          </section>
         </section>
       </main>
     </footer>

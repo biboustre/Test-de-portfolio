@@ -1,69 +1,112 @@
-
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    height: 80%;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  height: 80%;
 }
- 
-.mainFooter{
+
+.mainFooter {
   display: flex;
   background-color: white;
   height: 60%;
   width: 70%;
-  box-shadow: 0px 0px 30px 10px  black;
+  box-shadow: 0px 0px 30px 10px black;
   border-radius: 10px;
 }
 
-.identity{
+.identity {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
   height: 100%;
   width: 60%;
-  box-shadow: 0px 0px 30px  black;
+  box-shadow: 0px 0px 30px black;
 }
 
-.coordonnee{
+.coordonnee {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: center;
   gap: 10px;
-  margin: 145px 0 0 10px;
+  margin-left: 10px;
   height: 100%;
   width: 40%;
 }
 
-aside{
+aside {
   display: flex;
   flex-direction: column;
   gap: 5px;
   /* align-self: start; */
 }
 
-aside > h1{
+aside > h1 {
   font-family: "paprika";
   color: rgb(27, 134, 134);
 }
-aside > h2{
+aside > h2 {
   font-size: 16px;
   font-family: "paprika";
   color: rgb(145, 145, 145);
 }
 
-.imgIdentity > img{
+.imgIdentity > img {
   border-radius: 50%;
   height: 150px;
   width: 150px;
 }
 
-.hrFooter{
+.hrFooter {
   width: 60%;
 }
 
-.iconFooter{
+.iconFooter {
   color: rgb(27, 134, 134);
+  /* width: 100%; */
+}
+
+.mailNum {
+  color: rgb(145, 145, 145);
   width: 100%;
+}
+
+.coordonnee > section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info > p {
+  color: rgb(145, 145, 145);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1120px) {
+  .mainFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .identity {
+    width: 100%;
+  }
+
+  .imgIdentity > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .coordonnee {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .coordonnee > section {
+    width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
 }

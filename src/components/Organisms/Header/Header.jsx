@@ -29,13 +29,13 @@ function Header() {
             Project
           </a>
           <a
-            href="#contact"
+            href="#skills"
             className={`${styles.redirection} ${styles.redirection3} ${
-              active === "Contact" && styles.activeRedirection
+              active === "Skills" && styles.activeRedirection
             }`}
-            onClick={() => setActive("Contact")}
+            onClick={() => setActive("Skills")}
           >
-            Contact
+            Skills
           </a>
         </section>
       </section>

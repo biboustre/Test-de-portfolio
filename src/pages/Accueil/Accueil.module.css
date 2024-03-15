@@ -20,7 +20,7 @@ a {
   justify-content: center;
   align-items: center;
   /* margin-bottom: 90px; */
-  color: white;
+  /* color: white; */
 }
 
 .mainPresentation {
@@ -86,6 +86,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   gap: 200px;
+  color: whitesmoke;
   /* margin:100px 0; */
 }
 
@@ -155,9 +156,9 @@ h3 {
   animation: flash2 0.9s ease-in-out 1.7s forwards;
 }
 
-.linkFigures{
-  
-}
+/* .linkFigure{
+  height: auto;
+} */
 
 @keyframes flash2 {
   0% {
